@@ -1,4 +1,4 @@
-# We will build the architecture of Inception V3 using keras API from tensorflow
+# We will build the architecture of Inception using keras API from tensorflow
 from tensorflow import keras
 from keras.layers import Conv2D,AveragePooling2D,Dropout,Flatten,concatenate,MaxPool2D,Input,Dense
 from keras.models import Model
@@ -50,4 +50,4 @@ def inception_model():
 if __name__ == '__main__':
     model_inception = inception_model()
     print(model_inception.summary())
-    keras.utils.plot_model(model_inception,to_file='inception_v3.png',show_shapes=True)
+    keras.utils.plot_model(model_inception,to_file='inception_v1.png',show_shapes=True)
